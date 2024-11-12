@@ -29,10 +29,14 @@ func main() {
 
 	p4 := createPerson("aklsdjf", 23, "kjsdfasfdsadf", 53465465)
 	fmt.Println(p4)
+	fmt.Println(p4.details())
 
 }
 
 func createPerson(name string, age int, email string, phone int) *Person {
 	p := Person{name, age, email, phone}
 	return &p
+}
+func (p *Person) details() string {
+	return fmt.Sprintf("name: %s, email: %s, phone: %d, age: %d ", p.name, p.email, p.phone, p.age)
 }
