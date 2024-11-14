@@ -18,6 +18,7 @@ func main() {
 	p1.phone = 123456789
 
 	fmt.Println(p1)
+	fmt.Printf("%+v\n", p1)
 
 	p2 := Person{name: "nnnn", age: 55, email: "alksjdf@gmail.com", phone: 98734298493}
 	fmt.Println(p2)

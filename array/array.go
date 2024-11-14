@@ -26,26 +26,34 @@ func main() {
 
 	// fmt.Println(slice)
 
-	var arr = [5]int{1, 2, 3}
-	arr[4] = 4
-	arr[3] = 5
-	fmt.Println((arr))
+	// var arr = [5]int{1, 2, 3}
+	// arr[4] = 4
+	// arr[3] = 5
+	// fmt.Println((arr))
 
-	var dynArr = [...]int{1, 2, 3, 4, 5, 6}
-	// dynArr[9] = 9
-	fmt.Println(dynArr)
+	// var dynArr = [...]int{1, 2, 3, 4, 5, 6}
+	// // dynArr[9] = 9
+	// fmt.Println(dynArr)
 
-	var twoD [2][2]int
+	// var twoD [2][2]int
 
-	twoD = [2][2]int{
-		{1, 2}, {3, 4},
-	}
+	// twoD = [2][2]int{
+	// 	{1, 2}, {3, 4},
+	// }
 
-	for i := 0; i < len(twoD); i++ {
-		for j := 0; j < len(twoD[i]); j++ {
-			twoD[i][j] = twoD[i][j] + 5
-		}
-	}
+	// for i := 0; i < len(twoD); i++ {
+	// 	for j := 0; j < len(twoD[i]); j++ {
+	// 		twoD[i][j] = twoD[i][j] + 5
+	// 	}
+	// }
 
-	fmt.Println((twoD))
+	// fmt.Println((twoD))
+
+	var arr [5]string
+	arr[1] = "10"
+
+	var arr2 [5]int = [5]int{1, 2, 3, 4, 5}
+
+	fmt.Println(arr)
+	fmt.Println(arr2)
 }
